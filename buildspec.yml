@@ -13,6 +13,7 @@ phases:
       - mix local.hex --force
       - mix local.rebar --force
       - mix archive.install hex nerves_bootstrap
+      - mix local.nerves      
 
   build:
     commands:
