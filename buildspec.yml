@@ -12,8 +12,7 @@ phases:
       - export PATH=/usr/local/elixir/bin:$PATH
       - mix local.hex --force
       - mix local.rebar --force
-      - mix archive.install hex nerves_bootstrap
-      - mix local.nerves      
+      - mix archive.install hex nerves_bootstrap --force
 
   build:
     commands:
