@@ -67,7 +67,7 @@ defmodule Fs4.MixProject do
   defp deps do
     [
       {:nerves, "~> 1.5.4 or ~> 1.6.0 or ~> 1.7.15 or ~> 1.8", runtime: false},
-      {:nerves_system_br, "1.22.5", runtime: false},
+      {:nerves_system_br, "1.24.1", runtime: false},
       {:nerves_toolchain_aarch64_nerves_linux_gnu, "~> 1.8.0", runtime: false},
       {:nerves_system_linter, "~> 0.4", only: [:dev, :test], runtime: false},
       {:ex_doc, "~> 0.22", only: :docs, runtime: false}
@@ -75,9 +75,7 @@ defmodule Fs4.MixProject do
   end
 
   defp description do
-    """
-    Nerves System - Raspberry Pi 4
-    """
+    "Nerves System - Raspberry Pi 4 (64-bits)"
   end
 
   defp docs do
@@ -106,10 +104,10 @@ defmodule Fs4.MixProject do
       "CHANGELOG.md",
       "cmdline.txt",
       "config.txt",
-      "fwup-revert.conf",
+      "fwup-ops.conf",
       "fwup.conf",
       "LICENSE",
-      "linux-5.15.defconfig",
+      "linux-6.1.defconfig",
       "mix.exs",
       "nerves_defconfig",
       "post-build.sh",
